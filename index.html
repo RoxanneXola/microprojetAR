@@ -18,7 +18,9 @@
     
     sourceWidth="800" sourceHeight="600" displayWidth="1280" displayHeight="720">
 
-      
+    <a-assets>
+      <img id="img1" src="./Assets/Photo Riley.jpg">
+    </a-assets> 
         <a-marker type='barcode' value='0'>
    
             <a-text value="Hello Gang !" 
@@ -26,14 +28,10 @@
             width="10"
             color="pink" align="center" >
             </a-text>
-
+            <a-image src="#img1" rotation="270 0 0" width="1" height="2"></a-image>
         </a-marker>
-        <a-assets>
-          <img id="img1" src="./assets/Photo Riley.jpg">
-        </a-assets> 
-        <a-marker type='barcode' value='0'>
-          <a-image src="#img1" rotation="270 0 0" width="1" height="2"></a-image>
-        </a-marker>
+       
+    
 
         <a-entity camera></a-entity>
   </a-scene>
